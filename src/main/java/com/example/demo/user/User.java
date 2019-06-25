@@ -1,11 +1,13 @@
 package com.example.demo.user;
 
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 public class User {
 
     private Integer id;
 
+    @Size(min=2)
     private String name;
 
     private Date birthDate;
